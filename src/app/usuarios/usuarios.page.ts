@@ -32,8 +32,6 @@ export class UsuariosPage implements OnInit {
         
       let users=this.fbstore.collection("Usuarios")
 
-
-      users.get().subscribe
       users.ref.where("userid",">",user.uid).get().then(result=>{
 
      
