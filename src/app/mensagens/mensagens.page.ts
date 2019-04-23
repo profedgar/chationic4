@@ -73,7 +73,7 @@ export class MensagensPage implements OnInit {
   }
  
   private applyFilters(res) {
-    this.listamensagens = res.filter(t=>(t.de==this.usuario && t.para==this.usuariomensagem) || t.para==this.usuario && t.de==this.usuariomensagem)
+    this.listamensagens = res.filter(t=>(t.de==this.usuario && t.para==this.usuariomensagem) || (t.para==this.usuario && t.de==this.usuariomensagem))
   }
  
 
